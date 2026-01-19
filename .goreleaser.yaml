@@ -1,0 +1,64 @@
+version: 2
+
+project_name: go-try
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: go-try
+    main: .
+    binary: go-try
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w
+      - -X main.version={{.Version}}
+
+archives:
+  - id: default
+    format: tar.gz
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        format: zip
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^chore:"
+
+brews:
+  - name: go-try
+    repository:
+      owner: tobi  # Change to your GitHub username
+      name: homebrew-tap
+    homepage: "https://github.com/tobi/go-try"
+    description: "Ephemeral workspace manager - fresh directories for every vibe"
+    license: "MIT"
+    install: |
+      bin.install "go-try"
+    post_install: |
+      ohai "To use go-try, add to your shell config:"
+      ohai ""
+      ohai "  # bash/zsh"
+      ohai '  eval "$(go-try init)"'
+      ohai ""
+      ohai "  # fish"
+      ohai "  eval (go-try init | string collect)"
+    test: |
+      system "#{bin}/go-try", "--version"

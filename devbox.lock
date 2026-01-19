@@ -1,0 +1,345 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "delve@latest": {
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#delve",
+      "source": "devbox-search",
+      "version": "1.26.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n8k82dvmz0cmd3ap2zahjg2xnhkqc06m-delve-1.26.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n8k82dvmz0cmd3ap2zahjg2xnhkqc06m-delve-1.26.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/s155vp9hmsz1ph9jm0xf0618cl7jcn2j-delve-1.26.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/s155vp9hmsz1ph9jm0xf0618cl7jcn2j-delve-1.26.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7bkzvn3zc2cfgjh49d706d8pfqspv00b-delve-1.26.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7bkzvn3zc2cfgjh49d706d8pfqspv00b-delve-1.26.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rwycbvzs0i16qccffjpn644z9zi9b7ar-delve-1.26.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rwycbvzs0i16qccffjpn644z9zi9b7ar-delve-1.26.0"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-01-17T14:47:01Z",
+      "resolved": "github:NixOS/nixpkgs/3327b113f2ef698d380df83fbccefad7e83d7769?lastModified=1768661221"
+    },
+    "go-task@latest": {
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#go-task",
+      "source": "devbox-search",
+      "version": "3.45.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9ybcllfqylj7a7w42kiw9vqwd941s5lw-go-task-3.45.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9ybcllfqylj7a7w42kiw9vqwd941s5lw-go-task-3.45.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xiyrhd65ya9ynf3mrvb9kfg00x7nf1m6-go-task-3.45.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xiyrhd65ya9ynf3mrvb9kfg00x7nf1m6-go-task-3.45.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/znxnsk6k9ar637pi2dimrxmijqq0lf0b-go-task-3.45.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/znxnsk6k9ar637pi2dimrxmijqq0lf0b-go-task-3.45.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/w2hq0and0k2v1l4fbfsa6r4sadvixhsg-go-task-3.45.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/w2hq0and0k2v1l4fbfsa6r4sadvixhsg-go-task-3.45.5"
+        }
+      }
+    },
+    "go@latest": {
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#go",
+      "source": "devbox-search",
+      "version": "1.25.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fy2aq0rg6vbiyjfdpqy3429hqsan7iwm-go-1.25.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fy2aq0rg6vbiyjfdpqy3429hqsan7iwm-go-1.25.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/30d96229dgrh6n6bmd4hn9r1hcngj9bn-go-1.25.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/30d96229dgrh6n6bmd4hn9r1hcngj9bn-go-1.25.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wzakp2xy6if4n2b4fb1fkdjwilwlpifk-go-1.25.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wzakp2xy6if4n2b4fb1fkdjwilwlpifk-go-1.25.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/60z37432vmgkg54krwr1z057bqwp7583-go-1.25.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/60z37432vmgkg54krwr1z057bqwp7583-go-1.25.5"
+        }
+      }
+    },
+    "golangci-lint-langserver@latest": {
+      "last_modified": "2026-01-09T13:41:53Z",
+      "resolved": "github:NixOS/nixpkgs/5f02c91314c8ba4afe83b256b023756412218535#golangci-lint-langserver",
+      "source": "devbox-search",
+      "version": "0.0.11",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ah18jw5q5szick5vv30fszwb4fwnn1pr-golangci-lint-langserver-0.0.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ah18jw5q5szick5vv30fszwb4fwnn1pr-golangci-lint-langserver-0.0.11"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jl9416jq6a358rsljldcfqm5s6mx59i2-golangci-lint-langserver-0.0.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jl9416jq6a358rsljldcfqm5s6mx59i2-golangci-lint-langserver-0.0.11"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7p6srr2fjvi2vlfjgvq451p2qh362hp3-golangci-lint-langserver-0.0.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7p6srr2fjvi2vlfjgvq451p2qh362hp3-golangci-lint-langserver-0.0.11"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2kh0hhabqn545v3gjd8sii6zx1fxgf2g-golangci-lint-langserver-0.0.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2kh0hhabqn545v3gjd8sii6zx1fxgf2g-golangci-lint-langserver-0.0.11"
+        }
+      }
+    },
+    "golangci-lint@latest": {
+      "last_modified": "2026-01-09T13:41:53Z",
+      "resolved": "github:NixOS/nixpkgs/5f02c91314c8ba4afe83b256b023756412218535#golangci-lint",
+      "source": "devbox-search",
+      "version": "2.8.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b9iv68qcms160wlni9xn56s81cvqksgf-golangci-lint-2.8.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/b9iv68qcms160wlni9xn56s81cvqksgf-golangci-lint-2.8.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1yzy8ajvs3wj009j7al87hm6n0zwjd40-golangci-lint-2.8.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1yzy8ajvs3wj009j7al87hm6n0zwjd40-golangci-lint-2.8.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k17d2y5alkdd3p03haik3a3ksfaxh1fj-golangci-lint-2.8.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/k17d2y5alkdd3p03haik3a3ksfaxh1fj-golangci-lint-2.8.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/643gpb6qyxjl9lcrfr8gvfck2rj9zabd-golangci-lint-2.8.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/643gpb6qyxjl9lcrfr8gvfck2rj9zabd-golangci-lint-2.8.0"
+        }
+      }
+    },
+    "gopls@latest": {
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#gopls",
+      "source": "devbox-search",
+      "version": "0.21.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dmhh3lzqhwic8r8vzwkw07497vdf1zwp-gopls-0.21.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dmhh3lzqhwic8r8vzwkw07497vdf1zwp-gopls-0.21.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x4mys0jx0cj94hqhdy2j6f4axfci7l75-gopls-0.21.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x4mys0jx0cj94hqhdy2j6f4axfci7l75-gopls-0.21.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8nrwzrx7r4mpp3hbb533m1nvlhbj15kc-gopls-0.21.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8nrwzrx7r4mpp3hbb533m1nvlhbj15kc-gopls-0.21.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/maqqwihql23dk4zrblw5fzsdf4ib4snw-gopls-0.21.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/maqqwihql23dk4zrblw5fzsdf4ib4snw-gopls-0.21.0"
+        }
+      }
+    },
+    "goreleaser@latest": {
+      "last_modified": "2026-01-11T16:44:50Z",
+      "resolved": "github:NixOS/nixpkgs/4d113fe1f7bb454435a5cabae6cd283e64191bb7#goreleaser",
+      "source": "devbox-search",
+      "version": "2.13.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zkx9v9ji3lhvc7izhzwdg1gqv58f9qh5-goreleaser-2.13.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/zkx9v9ji3lhvc7izhzwdg1gqv58f9qh5-goreleaser-2.13.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hz2a2jjygwphii1x4lgcp09jwsczk036-goreleaser-2.13.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hz2a2jjygwphii1x4lgcp09jwsczk036-goreleaser-2.13.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vaccln1x2bw95yq44q7kmj86b1xsbhgj-goreleaser-2.13.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vaccln1x2bw95yq44q7kmj86b1xsbhgj-goreleaser-2.13.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6q7qdg9wpa41sv3r28mp7a7ag448ffz0-goreleaser-2.13.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6q7qdg9wpa41sv3r28mp7a7ag448ffz0-goreleaser-2.13.2"
+        }
+      }
+    }
+  }
+}

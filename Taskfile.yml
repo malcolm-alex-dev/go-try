@@ -1,0 +1,96 @@
+version: '3'
+
+vars:
+  BINARY_NAME: go-try
+  VERSION:
+    sh: git describe --tags --always --dirty 2>/dev/null || echo "dev"
+
+tasks:
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
+
+  build:
+    desc: Build the binary
+    cmds:
+      - go build -ldflags "-X main.version={{.VERSION}}" -o {{.BINARY_NAME}} .
+    sources:
+      - "**/*.go"
+      - go.mod
+      - go.sum
+    generates:
+      - "{{.BINARY_NAME}}"
+
+  install:
+    desc: Install to GOPATH/bin
+    cmds:
+      - go install -ldflags "-X main.version={{.VERSION}}" .
+
+  install:local:
+    desc: Install to /usr/local/bin (requires sudo)
+    cmds:
+      - task: build
+      - sudo cp {{.BINARY_NAME}} /usr/local/bin/
+
+  install:user:
+    desc: Install to ~/.local/bin (no sudo)
+    cmds:
+      - task: build
+      - mkdir -p ~/.local/bin
+      - cp {{.BINARY_NAME}} ~/.local/bin/
+
+  run:
+    desc: Run the application
+    cmds:
+      - go run . {{.CLI_ARGS}}
+
+  test:
+    desc: Run all tests
+    cmds:
+      - go test -v ./...
+
+  test:cover:
+    desc: Run tests with coverage
+    cmds:
+      - go test -coverprofile=coverage.out ./...
+      - go tool cover -html=coverage.out -o coverage.html
+
+  lint:
+    desc: Run linter
+    cmds:
+      - golangci-lint run ./...
+
+  fmt:
+    desc: Format code
+    cmds:
+      - go fmt ./...
+
+  tidy:
+    desc: Tidy go modules
+    cmds:
+      - go mod tidy
+
+  clean:
+    desc: Clean build artifacts
+    cmds:
+      - rm -f {{.BINARY_NAME}}
+      - rm -f coverage.out coverage.html
+
+  all:
+    desc: Format, lint, test, and build
+    cmds:
+      - task: fmt
+      - task: lint
+      - task: test
+      - task: build
+
+  release:snapshot:
+    desc: Build a snapshot release (no publish)
+    cmds:
+      - goreleaser release --snapshot --clean
+
+  release:
+    desc: Build and publish a release (requires GITHUB_TOKEN)
+    cmds:
+      - goreleaser release --clean
